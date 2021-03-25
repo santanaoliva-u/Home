@@ -1,0 +1,21 @@
+{
+  "name": "particles.js",
+  "main": "particles.js",
+  "homepage": "particles.js",
+  "authors": [
+    "fastmore crak <fastmorecrak@gmail.com>"
+  ],
+  "description": "Particles",
+  "keywords": [
+    "particle",
+    "particles"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

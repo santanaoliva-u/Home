@@ -1,0 +1,99 @@
+<!--    ___________________________________________
+       |                                           |
+       * Author : Fastmore Crak - fastmorecrak.com *
+       * Redes Sociales Y Canales: @fastmorecrak   *
+       * Derechos De Author Resevados©             *
+       * Copyright 2014-2017 Fastmore Crak         *
+	   * Released on: Jueves 1  de Abril 2021      *
+       |___________________________________________|
+
+      Esto estos Archivos Estan ordenados de manera 
+      la cual los programadores puedan entender donde
+      se localiza cada Contenido                  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Musicas</title>
+	<link href="style.css" rel="stylesheet"> <!--load all styles -->
+	<link href="fontawesome/css/all.css" rel="stylesheet"> <!--load all styles -->
+	<link href="css/css.css" rel="stylesheet"><!--load all styles -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<script defer src="js/javascript.js"</script><!--load all styles -->
+	<script defer src="fontawesome/js/all.js"></script> <!--load all styles -->
+
+</head>
+<body style="
+    background-image: url(fondo.jpg);
+">
+	<!-- 
+		Autor: Fastmore Crak
+	-->
+	<audio id="player" ontimeupdate="updateProgress();">
+		<source  id="source">	
+		Audio no soportado	
+	</audio>
+	
+	<div id="controls">
+		<div style="
+    color: #00ff06;
+    text-shadow: 0px -1px 12px rgb(0 255 62);
+" class="timer" id="timer">
+			&nbsp;
+		</div>
+			<!--proseso de volumen -->
+		<div style="
+    color: #00ff06;
+    text-shadow: 0px -1px 12px rgb(0 255 62);
+" class="volumen">
+			Vol: 
+			<i  style="
+    color: #00ff1d;
+    text-shadow: 0px -1px 12px rgb(20 255 0);
+"class="fas fa-volume-down"></i> 
+			<input type="range" name="volumen" id="volumen" min="0" max="1" step="0.01" value="0.75"> 
+			<i style="
+    color: #12ff00;
+    text-shadow: 0px -1px 12px rgb(20 255 0);
+"class="fas fa-volume-up"></i>
+		</div>
+		<!-- FIN---->
+		<!--Boton de poner musica anterior-->
+		<i style="
+    text-shadow: 0px -1px 12px rgb(255 0 0);
+    color: red;
+" class="fas fa-backward fa-5x" onclick="prevMusic();"></i>
+         <!-- Boton de PLAY o stop -->
+		<i style="
+    text-shadow: 0px -1px 12px rgb(255 0 0);
+    color: red;
+" class="far fa-play-circle fa-5x" onclick="togglePlay();" id="iconPlay"></i> 
+         <!-- Boton de poner siguiente musica-->
+		<i style="
+    text-shadow: 0px -1px 12px rgb(255 0 0);
+    color: red;
+" class="fas fa-forward fa-5x" onclick="nextMusic();"></i>
+             <!--Proseso de Musica  -->
+		<br>
+		<span id="currentPlay"></span><br>
+		<progress id="progress" value="0" max="100" ></progress>
+		
+		
+		
+		
+		<h3 style="
+    color: #00ff06;
+    text-shadow: 0px -1px 12px rgb(0 255 62);
+">Musicas : </h3>
+		<div id="playList"></div>
+
+	
+	
+	
+	</div>
+	</div>
+	
+	
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>

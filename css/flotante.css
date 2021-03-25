@@ -1,0 +1,46 @@
+@charset "UTF-8";
+/**
+        ___________________________________________
+       |                                           |
+       * Author : Fastmore Crak - fastmorecrak.com *
+       * Redes Sociales Y Canales: @fastmorecrak   *
+       * Derechos De Author Resevados©             *
+       * Copyright 2021-2910 Fastmore Crak         *
+	   * Released on: Jueves 1  de Abril 2021      *
+       |___________________________________________|
+
+
+*/
+
+.float {
+    position: relative;
+    width: 1px;
+    height: 1px;
+    bottom: 11px;
+    right: 67px;
+    font-size: 22px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+    left: -29px;
+    top: 210px;
+}
+
+.my-flotante{
+	margin-top:16px;
+}
+
+.flotantedescarga {
+    position: fixed;
+    top: 581px;
+    text-align: center;
+    font-size: 1px;
+    z-index: 100;
+    color: #fff;
+    left: 154px;
+}
+
+.my-flotantedescarga{
+	margin-top:16px;
+}
+
+

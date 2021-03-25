@@ -1,0 +1,65 @@
+@charset "UTF-8";
+/**
+        ___________________________________________
+       |                                           |
+       * Author : Fastmore Crak - fastmorecrak.com *
+       * Redes Sociales Y Canales: @fastmorecrak   *
+       * Derechos De Author Resevados©             *
+       * Copyright 2021-2910 Fastmore Crak         *
+	   * Released on: Jueves 1  de Abril 2021      *
+       |___________________________________________|
+
+
+*/
+
+
+
+.modal.fade.in .modal-dialog {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+}
+.modal.fade .modal-dialog {
+    -webkit-transform: scale(.8);
+    -moz-transform: scale(.8);
+    -ms-transform: scale(.8);
+    transform: scale(.8);
+    opacity: 0;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    transition: all .3s;
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+    margin: auto;
+}
+.modal.in .modal-dialog {
+    -webkit-transform: translate(0,0);
+    -ms-transform: translate(0,0);
+    -o-transform: translate(0,0);
+    transform: translate(0,0);
+}
+.modal.fade .modal-dialog {
+    -webkit-transition: -webkit-transform .3s ease-out;
+    -o-transition: -o-transform .3s ease-out;
+    transition: transform .3s ease-out;
+    -webkit-transform: translate(0,-25%);
+    -ms-transform: translate(0,-25%);
+    -o-transform: translate(0,-25%);
+    transform: translate(0,-25%);
+}
+@media (min-width: 768px)
+.modal-sm {
+    width: 300px;
+}
+@media (min-width: 768px)
+.modal-dialog {
+    width: 600px;
+    margin: 150px auto;
+}
+.modal-dialog {
+    position: relative;
+    width: auto;
+    margin: 10px;
